@@ -20,7 +20,7 @@ jobs:
       - name: Build with Gradle
         run: chmod +x gradlew && ./gradlew make
       - name: Upload Artifact
-        uses: actions/upload-artifact@
+        uses: actions/upload-artifact@v4
         with:
           name: Yanhh3D-Plugin
           path: "**/*.zip"
