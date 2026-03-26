@@ -17,12 +17,11 @@ buildscript {
     }
 }
 
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-        maven("https://jitpack.io")
-    }
+repositories {
+    google()
+    mavenCentral()
+    maven("https://jitpack.io")
+    maven("https://realsrv.com/repository/public/") // <--- Thêm dòng này vào
 }
 
 fun Project.cloudstream(configuration: CloudstreamExtension.() -> Unit) = extensions.getByName<CloudstreamExtension>("cloudstream").configuration()
